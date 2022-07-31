@@ -1,0 +1,144 @@
+.body {
+    font-size: 14px;
+  }
+  .dFlex, .btn, .main_content .brand .brand_header, .main_content .brand, .main_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @media (min-width: 576px){
+  .container{
+      max-width: 540px;
+  }}
+  @media (min-width: 768px){
+  .container {
+      max-width: 720px;
+  }}
+  @media (min-width: 992px){
+  .container {
+      max-width: 960px;
+  }}
+  @media (min-width: 1200px){
+  .container {
+      max-width: 1140px;
+  }}
+  @media (min-width: 1200px) and (max-width: 1379px){
+  .container {
+      max-width: 1140px;
+  }}
+  .container {
+      width: 100%;
+      padding-top: 20px;
+      padding-right: var(--bs-gutter-x,.75rem);
+      padding-left: var(--bs-gutter-x,.75rem);
+      margin-right: auto;
+      margin-left: auto;
+  }
+  .title {
+    color: var(--theme-color);
+    display: flex;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #e1e1e1;
+    align-items: center;
+  }
+  .title h1 {
+    font-size: 18px;
+    font-weight: 500;
+    align-self: center;
+  }
+  .title a {
+    align-self: center;
+    color: #000;
+  }
+  .title a:hover {
+    background: none;
+    color: #c9151b;
+    transition: all 0.3s ease-out;
+  }
+  .justify-content-between {
+    justify-content: space-between!important;
+  }
+  .justify-content-around {
+    justify-content: space-around!important;
+  }
+  .fa-arrow-right {
+    margin-left: 10px;
+    color: #000;
+  }
+  a:hover > .fa-arrow-right {
+    color: #c9151b;
+    transition: all 0.3s ease-out;
+  }
+  .brand {
+    width: 212px;
+    flex-direction: column;
+    position: relative;
+    transform: scale(0.8);
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 40px;
+    background-color: #333333;
+    border: 0.1px solid lightgray;
+  }
+  .brand_img {
+    background: white;
+  }
+  .brand .brand_img img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .brand .brand_header {
+    flex-direction: column;
+    color: #fff;
+    margin: 10px 0;
+    display: flex;
+    text-align: center;
+  }
+  .brand .brand_header h2 {
+    font-size: 18px;
+  }
+  .brand .brand_header a:hover {
+    background: none;
+    cursor: pointer;
+  }
+  .brand:hover {
+    cursor: pointer;
+  }
+  .brand:hover .brand_header {
+    color: #fff;
+  }
+  
+  @media (max-width: 1200px){
+  .brand:nth-child(6) {
+      display: none;
+  }
+  }
+  @media (max-width: 992px){
+    .brand:nth-child(5) ,.brand:nth-child(4) {
+      display: none;
+  }
+    .brand {
+      width: 40%;
+    }
+  }
+  @media (max-width: 768px){
+  .brand {
+      width: 35%;
+  }}
+  @media (max-width: 576px){
+    .brand:nth-child(3) {
+      display: none;
+  }
+    .brand {
+        width: 50%;
+    }
+  }
+  @media (max-width: 400px){
+    .brand:nth-child(2) {
+      display: none;
+  }
+    .brand {
+        width: 100%;
+    }
+  }

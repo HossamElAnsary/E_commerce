@@ -1,0 +1,25 @@
+.sg-product {
+    margin-bottom: 15px;
+    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid #f4f4f4;
+    text-align: center;
+    position: relative;
+    width: 32%;
+}
+@media (max-width :765px) {
+    .sg-product:nth-child(3) {
+        display: none;
+    }
+    .sg-product {
+        width: 48%;
+    }
+}
+@media (max-width :400px) {
+    .sg-product:nth-child(2) {
+        display: none;
+    }
+    .sg-product {
+        width: 100%;
+    }
+}
